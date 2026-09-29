@@ -22,6 +22,14 @@ function Home() {
           Learn More About Me
         </Link>
       </div>
+
+      <div className="hero-image-container">
+        <img
+          src="/images/innovation.png"
+          alt="Technology and innovation illustration"
+          className="hero-image"
+        />
+      </div>
     </section>
   );
 }

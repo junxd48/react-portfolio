@@ -59,13 +59,28 @@ main {
 
 .hero {
   min-height: 75vh;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
   align-items: center;
-  padding: 60px 8%;
+  gap: 70px;
+  padding: 60px 6% 60px 8%;
 }
 
 .hero-content {
-  max-width: 800px;
+  max-width: 750px;
+}
+
+.hero-image-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  display: block;
 }
 
 .intro {
@@ -391,7 +406,13 @@ footer p {
   }
 
   .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
     padding: 50px 6%;
+  }
+
+  .hero-content {
+    margin: 0 auto;
   }
 
   .hero h1 {
@@ -400,6 +421,14 @@ footer p {
 
   .hero-description {
     font-size: 17px;
+  }
+
+  .hero-image-container {
+    order: 2;
+  }
+
+  .hero-image {
+    max-width: 350px;
   }
 
   .about-container {
