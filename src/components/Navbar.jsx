@@ -4,7 +4,9 @@ function Navbar() {
   return (
     <nav>
       <div>
-        <Link to="/">JD</Link>
+        <Link to="/">
+            <img src="/images/logo.png" alt="JD Technologies logo" />
+        </Link>
       </div>
 
       <div>

@@ -41,14 +41,12 @@ nav > div:last-child {
 nav > div:first-child a {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  font-size: 18px;
-  font-weight: bold;
-  border: 2px solid white;
-  border-radius: 50%;
-  color: #E9C46A;
+}
+
+nav > div:first-child img {
+  width: 80px;
+  height: auto;
+  display: block;
 }
 
 /* Main content */
@@ -139,11 +137,10 @@ main {
 
 .section-label {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: 2px;
   margin-bottom: 15px;
   color: #2A9D8F;
-  font-weight: 600;
 }
 
 .about-content h1 {
@@ -162,7 +159,7 @@ main {
 footer {
   text-align: center;
   padding: 25px;
-  background-color: #222;
+  background-color: #26354A;
   color: white;
   margin-top: 40px;
 }
