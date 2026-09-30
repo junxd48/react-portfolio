@@ -38,7 +38,9 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/junxd48/react-portfolio.git
+```
 
 ## Live Demo
+
 You can view the deployed website here:
-https://react-portfolio-gamma-eight-60.vercel.app/
+[Live Portfolio Demo](https://react-portfolio-gamma-eight-60.vercel.app/)
