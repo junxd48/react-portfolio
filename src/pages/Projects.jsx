@@ -1,3 +1,8 @@
+/******************************************/
+/* This page contains the Projects sample */
+/* which are stored in a constant array   */
+/******************************************/
+
 const projects = [
   {
     title: "Student Disability & Accommodation Services System",
@@ -70,4 +75,5 @@ function Projects() {
   );
 }
 
+// Exports so it can be imported and used by other files
 export default Projects;

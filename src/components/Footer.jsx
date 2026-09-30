@@ -1,3 +1,7 @@
+/************************************************************/
+/* Provides the shared footer displayed below the main page */
+/************************************************************/
+
 function Footer() {
   return (
     <footer>
@@ -6,4 +10,5 @@ function Footer() {
   );
 }
 
+// Exports so it can be imported and used by other files
 export default Footer;

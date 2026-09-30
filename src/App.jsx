@@ -1,3 +1,12 @@
+/**********************************************/
+/* Application composition and routing.       */
+/* Connects Navbar, Routes/pages, and Footer. */
+/**********************************************/
+
+// Imports the React Router components needed to handle navigation and routing.
+// BrowserRouter enables browser-based routing.
+// Routes contains all available Route definitions.
+// Route connects a URL path to a specific React component.
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
@@ -12,7 +21,8 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <BrowserRouter>
+    // Enables React Router for all components contained inside it
+    <BrowserRouter>  
       <Navbar />
       <main>
         <Routes>
@@ -29,4 +39,5 @@ function App() {
   );
 }
 
+// Exports so it can be imported and used by other files
 export default App;

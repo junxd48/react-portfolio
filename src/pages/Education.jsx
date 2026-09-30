@@ -1,3 +1,8 @@
+/***********************************************/
+/* This page contains the Education background */
+/* which are stored in a constant array        */
+/***********************************************/
+
 const qualifications = [
   {
     year: "2026",
@@ -66,4 +71,5 @@ function Education() {
   );
 }
 
+// Exports so it can be imported and used by other files
 export default Education;

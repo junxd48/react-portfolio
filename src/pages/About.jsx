@@ -1,5 +1,12 @@
+/**************************************************/
+/* This page contains the Professional biography, */
+/* profile image, and résumé link.                */
+/**************************************************/
+
+// function represents the content displayed on the About page
 function About() {
   return (
+    // Main section. The classes are used to apply the styles from CSS.
     <section className="about-page">
       <div className="about-container">
 
@@ -50,4 +57,5 @@ function About() {
   );
 }
 
+// Exports so it can be imported and used by other files
 export default About;

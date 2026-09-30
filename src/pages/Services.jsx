@@ -1,3 +1,8 @@
+/*************************************************/
+/* This page contains the list of offered        */
+/* Services which are stored in a constant array */
+/*************************************************/
+
 const services = [
   {
     title: "Web Development",
@@ -63,4 +68,5 @@ function Services() {
   );
 }
 
+// Exports so it can be imported and used by other files
 export default Services;

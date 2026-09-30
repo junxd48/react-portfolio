@@ -1,9 +1,19 @@
+/********************************************************/
+/* Contact page. Controlled React form using useState;  */
+/* useNavigate returns the visitor to Home/Landing page */
+/* after submission for now.                            */
+/********************************************************/
+
+// useState hook for storing and updating form input values
 import { useState } from "react";
+// useNavigate allows programmatic navigation between routes
 import { useNavigate } from "react-router-dom";
+
 
 function Contact() {
   const navigate = useNavigate();
 
+  // Stores all contact form fields in a single state object
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -12,20 +22,24 @@ function Contact() {
     message: "",
   });
 
+  // Updates the appropriate form field whenever the user enters or changes data
   function handleChange(event) {
     const { name, value } = event.target;
 
+    // Updates only the changed field while preserving the other form values
     setFormData((previousData) => ({
       ...previousData,
       [name]: value,
     }));
   }
 
+  // Handles the form submission
   function handleSubmit(event) {
     event.preventDefault();
 
     console.log("Contact form submission:", formData);
 
+    // Redirects to the Home page after submission
     navigate("/");
   }
 
@@ -120,4 +134,5 @@ function Contact() {
   );
 }
 
+// Exports so it can be imported and used by other files
 export default Contact;

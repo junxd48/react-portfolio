@@ -1,24 +1,31 @@
-import { Link } from "react-router-dom";
+/****************************************************************/
+/* Provides site-wide navigation. Brings together React Router, */
+/* shared components, and individual page components.           */
+/****************************************************************/
+
+// NavLink component allows tracking which page is currently active.
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav>
       <div>
-        <Link to="/">
+        <NavLink to="/">
             <img src="/images/logo.png" alt="JD Technologies logo" />
-        </Link>
+        </NavLink>
       </div>
 
       <div>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/education">Education</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/contact">Contact</Link>
+        <NavLink to="/" end>Home</NavLink>
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/projects">Projects</NavLink>
+        <NavLink to="/education">Education</NavLink>
+        <NavLink to="/services">Services</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
       </div>
     </nav>
   );
 }
 
+// Exports so it can be imported and used by other files
 export default Navbar;
